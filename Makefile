@@ -16,3 +16,12 @@ all:	$(TARGET)
 
 clean:
 	rm -f $(OBJS) $(TARGET)
+
+install:
+	sudo apt update
+	sudo apt install g++
+	sudo apt-get install freeglut3-dev
+	sudo apt install libfreeimage-dev
+
+run:
+	./game
